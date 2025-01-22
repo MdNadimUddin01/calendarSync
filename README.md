@@ -32,7 +32,7 @@ Deployed App: [Calendar Sync](https://calendar-sync-two.vercel.app/)
 
 ## 📁 Project Structure
 ```
-project-name/
+calendarSync/
 ├── public/
 ├── src/
 │   ├── components/
