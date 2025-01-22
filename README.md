@@ -1,6 +1,7 @@
 # CalendarSync
 
 CalendarSync is a web application that allows users to log in using Google Single Sign-On (SSO), view their Google Calendar events in a table format, filter and search events, and delete events directly from the interface.
+Deployed App: [Calendar Sync](https://calendar-sync-two.vercel.app/)
 
 ## ✨ Features
 
