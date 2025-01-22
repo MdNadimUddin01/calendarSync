@@ -8,15 +8,11 @@ import {
     Users,
     Bell,
   } from "lucide-react";
-  import { FcGoogle } from "react-icons/fc";
 
 function FrontPage({loginHandler , user}) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
-      {/* Navigation */}
       
-
-      {/* Hero Section */}
       <main className="pt-32 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center relative">
