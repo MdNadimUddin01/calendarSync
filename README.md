@@ -48,7 +48,7 @@ project-name/
 ├── README.md
 ├── package.json
 ├── vite.config.js
-└── .env
+└── etc.
 ```
 
 ## 🚀 Setup Instructions
