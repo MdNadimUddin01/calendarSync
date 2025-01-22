@@ -77,7 +77,7 @@ function Table({getEvent, eventDetails, setEventDetails }) {
   }
 
   return (
-    <div className="container lg:w-[1280px] border p-2 flex flex-col flex-start gap-1 rounded-[10px] mx-auto my-auto mt-30 mb-10 bg-[#f9f9f9]">
+    <div className="container lg:w-[1280px] border p-2 flex flex-col flex-start gap-1 rounded-[10px] mx-auto my-auto mt-36  bg-[#f9f9f9]">
       <div className="p-6 border-b border-gray-200 mb-4">
         <h2 className="text-xl font-semibold flex items-center gap-2">
           <Calendar className="h-5 w-5" />
