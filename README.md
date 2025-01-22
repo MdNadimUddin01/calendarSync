@@ -15,8 +15,7 @@ CalendarSync is a web application that allows users to log in using Google Singl
 ### Additional Features
 - **Search Events:** Search for events by name using a search box
 - **Delete Events:** Select one or multiple events using checkboxes for bulk deletion
-- **User Dashboard:** Personalized dashboard displaying calendar events after login
-
+  
 ## 🛠️ Tech Stack
 
 ### Frontend
