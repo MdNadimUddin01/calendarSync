@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import { GoogleOAuthProvider } from "@react-oauth/google";
-
+import {Toaster} from "react-hot-toast"
 
 function App() {
 
@@ -18,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home></Home>}></Route>
           </Routes>
+          <Toaster></Toaster>
         </GoogleOAuthProvider>
       </BrowserRouter>
     </>

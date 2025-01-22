@@ -6,6 +6,7 @@ import { Calendar } from "lucide-react";
 import { RxCross2 } from "react-icons/rx";
 import { RiCheckboxIndeterminateFill } from "react-icons/ri";
 import axios from "axios";
+import toast from "react-hot-toast"
 
 function Table({ getEvent, eventDetails, setEventDetails }) {
   const [searchText, setSearchText] = useState("");
@@ -17,6 +18,7 @@ function Table({ getEvent, eventDetails, setEventDetails }) {
 
 
   const deleteEvents = async (eventIds, accessToken) => {
+    const loadingToast = toast.loading("Loading")
     const baseUrl =
       "https://www.googleapis.com/calendar/v3/calendars/primary/events/";
 
@@ -31,6 +33,9 @@ function Table({ getEvent, eventDetails, setEventDetails }) {
         if (response.status === 204) {
           console.log(`Event ${eventId} deleted successfully!`);
         }
+
+        
+
       } catch (error) {
         console.error(
           `Error deleting event ${eventId}:`,
@@ -38,7 +43,9 @@ function Table({ getEvent, eventDetails, setEventDetails }) {
         );
       }
     }
-
+    toast.dismiss(loadingToast)
+    toast.success("Event deletion Successfull");
+    setEventIds([]);
     getEvent(token);
   };
 

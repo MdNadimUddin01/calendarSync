@@ -4,6 +4,7 @@ import { useGoogleLogin } from "@react-oauth/google";
 import FrontPage from "../component/FrontPage";
 import Navbar from "../component/Navbar";
 import Table from "./Table";
+import toast from "react-hot-toast"
 
 const Home = () => {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
@@ -46,7 +47,7 @@ const Home = () => {
       console.log("TOKEN NOT FOUND");
       return;
     }
-
+    const loadingToast = toast.loading("Loading");
     await axios
       .get("https://www.googleapis.com/calendar/v3/calendars/primary/events", {
         headers: {
@@ -59,10 +60,14 @@ const Home = () => {
       .then((response) => {
         console.log("HELLO");
         setEventDetails(response.data.items);
+        toast.success("Event Fetched Successfully")
       })
       .catch((error) => {
         console.error(`Error fetching calendar list: ${error.message}`);
+        toast.error("Event doesn't fetch")
       });
+
+      toast.dismiss(loadingToast);
   };
 
   const logoutHandler = () => {
