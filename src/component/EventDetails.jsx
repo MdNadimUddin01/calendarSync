@@ -25,10 +25,10 @@ function EventDetails({item , setEventIds , eventIds}) {
   return (
     <div className="flex py-[8px] px-[14px] rounded-md items-center justify-between self-stretch bg-[#Fff]">
       {/* </div> */}
-      <div className="flex items-center gap-1 w-[35%]">
+      <div className="flex items-center gap-1 w-[38%]">
         {check && <IoIosCheckbox className="w-[20px] h-[20px]" onClick={checkHandler}/>}
         {!check && <MdCheckBoxOutlineBlank className="w-[20px] h-[20px]" onClick={checkHandler}></MdCheckBoxOutlineBlank>}
-        <div className="flex py-[10px] px-[14px] items-center gap-1 self-stretch">
+        <div className="flex w-[32%] py-[10px] px-[14px] items-center gap-1 self-stretch">
           <p className="text-[14px] text-[#000]  font-medium leading-normal">
             {item.summary}
           </p>

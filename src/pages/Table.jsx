@@ -143,9 +143,9 @@ function Table({ getEvent, eventDetails, setEventDetails }) {
         {/* Header */}
         <div className="flex py-[4px] px-[14px] rounded-md items-center justify-between self-stretch bg-[#eee]">
           {/* </div> */}
-          <div className="flex items-center gap-1 w-[35%]">
-            <RiCheckboxIndeterminateFill className="w-5 h-5" />
-            <div className="flex py-[10px] px-[14px] items-center self-stretch gap-1">
+          <div className="flex items-center gap-1 w-[38%]">
+            <RiCheckboxIndeterminateFill className="w-[20px] h-[20px]" />
+            <div className="flex py-[10px] px-[14px] w-[30%] items-center self-stretch gap-1">
               <p className="text-[14px] text-[#000] font-medium leading-normal">
                 Event Name
               </p>
