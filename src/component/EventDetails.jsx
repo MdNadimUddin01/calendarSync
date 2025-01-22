@@ -38,12 +38,12 @@ function EventDetails({item , setEventIds , eventIds}) {
       <div className={`w-[60%] flex justify-between items-center text-[14px] text-[#000]`}>
 
         <div className="flex justify-start w-[25%]">
-          <p className="font-medium leading-normal">{new Date(item.start.dateTime).toDateString()}</p>
+          <p className="font-medium leading-normal">{new Date(item?.start?.dateTime).toDateString()}</p>
         </div>
 
         <div className="flex justify-center w-[25%]">
           <p className=" font-medium leading-normal">
-            {item?.start?.dateTime === null ? "-" : (new Date(item.start.dateTime)).toLocaleTimeString()}
+            {item?.start?.dateTime === null ? "-" : (new Date(item?.start?.dateTime)).toLocaleTimeString()}
           </p>
         </div>
 
