@@ -30,7 +30,7 @@ function EventDetails({item , setEventIds , eventIds}) {
         {!check && <MdCheckBoxOutlineBlank className="w-[20px] h-[20px]" onClick={checkHandler}></MdCheckBoxOutlineBlank>}
         <div className="flex w-[32%] py-[10px] px-[14px] items-center gap-1 self-stretch">
           <p className="text-[14px] text-[#000]  font-medium leading-normal">
-            {item.summary}
+            {item?.summary == null ? "-" : item.summary}
           </p>
         </div>
       </div>
@@ -43,13 +43,13 @@ function EventDetails({item , setEventIds , eventIds}) {
 
         <div className="flex justify-center w-[25%]">
           <p className=" font-medium leading-normal">
-            {(new Date(item.start.dateTime)).toLocaleTimeString()}
+            {item?.start?.dateTime === null ? "-" : (new Date(item.start.dateTime)).toLocaleTimeString()}
           </p>
         </div>
 
         <div className="flex justify-center w-[25%] items-center">
           <p className=" font-medium leading-normal">
-            {item.status}
+            {item?.status == null ? "-" : item?.status}
           </p>
         </div>
 
