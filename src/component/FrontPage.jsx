@@ -174,54 +174,7 @@ function FrontPage({loginHandler , user}) {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-white/70 backdrop-blur-lg border-t mt-32">
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              {
-                title: "Product",
-                links: ["Features", "Security"],
-              },
-              {
-                title: "Company",
-                links: ["About", "Blog"],
-              },
-              {
-                title: "Support",
-                links: ["Help Center", "Contact"],
-              },
-              {
-                title: "Legal",
-                links: ["Privacy", "Terms"],
-              },
-            ].map((section, index) => (
-              <div key={index}>
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  {section.title}
-                </h3>
-                <ul className="mt-4 space-y-4">
-                  {section.links.map((link, linkIndex) => (
-                    <li key={linkIndex}>
-                      <a
-                        href="#"
-                        className="text-base text-gray-500 hover:text-gray-900"
-                      >
-                        {link}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-          <div className="mt-8 border-t border-gray-200 pt-8 text-center">
-            <p className="text-gray-400 text-sm">
-              © 2025 CalendarSync. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      
     </div>
   );
 }
