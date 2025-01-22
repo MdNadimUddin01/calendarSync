@@ -2,6 +2,8 @@
 
 CalendarSync is a web application that allows users to log in using Google Single Sign-On (SSO), view their Google Calendar events in a table format, filter and search events, and delete events directly from the interface.
 
+Deployed App: [Calendar Sync](https://calendar-sync-two.vercel.app/)
+
 ## ✨ Features
 
 ### Core Functionality
@@ -15,8 +17,7 @@ CalendarSync is a web application that allows users to log in using Google Singl
 ### Additional Features
 - **Search Events:** Search for events by name using a search box
 - **Delete Events:** Select one or multiple events using checkboxes for bulk deletion
-- **User Dashboard:** Personalized dashboard displaying calendar events after login
-
+  
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -31,7 +32,7 @@ CalendarSync is a web application that allows users to log in using Google Singl
 
 ## 📁 Project Structure
 ```
-project-name/
+calendarSync/
 ├── public/
 ├── src/
 │   ├── components/
@@ -48,7 +49,7 @@ project-name/
 ├── README.md
 ├── package.json
 ├── vite.config.js
-└── .env
+└── etc.
 ```
 
 ## 🚀 Setup Instructions
